@@ -32,7 +32,7 @@ if [ ! $last_tag_ref == $last_commit_ref ]; then
 	exit 1
 fi
 
-export GITHUB_USER=nicksherorn
+export GITHUB_USER=eddict
 export GITHUB_REPO=bashhub-server
 
 echo "Verifying release"

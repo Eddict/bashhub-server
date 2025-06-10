@@ -1,4 +1,4 @@
-module github.com/nicksherron/bashhub-server
+module github.com/eddict/bashhub-server
 
 go 1.13
 

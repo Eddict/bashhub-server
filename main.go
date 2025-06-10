@@ -19,7 +19,7 @@
 package main
 
 import (
-	"github.com/nicksherron/bashhub-server/cmd"
+	"github.com/eddict/bashhub-server/cmd"
 )
 
 func main() {

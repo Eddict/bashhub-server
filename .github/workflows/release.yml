@@ -24,7 +24,7 @@ jobs:
         run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3 | sed 's/v//g' )
       - uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: nicksherron/bashhub-server
+          name: eddict/bashhub-server
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: Dockerfile

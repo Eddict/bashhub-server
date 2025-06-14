@@ -33,7 +33,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	// db driver are called by database/sql
 	_ "github.com/lib/pq"
-	"github.com/mattn/go-sqlite3@v1.14.28"
+	"github.com/mattn/go-sqlite3"
 	"golang.org/x/crypto/bcrypt"
 )
 

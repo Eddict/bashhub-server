@@ -17,7 +17,7 @@ require (
 	github.com/lib/pq v1.3.0
 	github.com/magiconair/properties v1.8.0
 	github.com/mattn/go-isatty v0.0.14 // indirect
-	github.com/mattn/go-sqlite3@v1.14.28
+	github.com/mattn/go-sqlite3 v1.14.28
 	github.com/spf13/cobra v0.0.5
 	github.com/stretchr/testify v1.7.0
 	github.com/ugorji/go v1.2.6 // indirect

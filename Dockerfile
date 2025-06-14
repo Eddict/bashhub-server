@@ -43,7 +43,6 @@ RUN apk update && apk upgrade
 # ---
 
 FROM alpine:3.22
-FROM alpine:3.22
 
 COPY --from=build /go/bin/bashhub-server /usr/bin/bashhub-server
 

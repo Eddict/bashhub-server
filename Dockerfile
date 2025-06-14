@@ -14,8 +14,8 @@
 #
 #
 
-# GitHub:       https://github.com/nicksherron/bashhub-server
-FROM golang:1.13-alpine AS build
+# GitHub:       https://github.com/eddict/bashhub-server
+FROM golang:1.24.4-alpine3.22 AS build
 
 ARG VERSION
 ARG GIT_COMMIT
@@ -39,7 +39,7 @@ RUN go build  -ldflags "-X github.com/nicksherron/bashhub-server/cmd.Version=${V
 
 # ---
 
-FROM alpine:3.11
+FROM alpine:3.22
 
 COPY --from=build /go/bin/bashhub-server /usr/bin/bashhub-server
 

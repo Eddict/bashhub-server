@@ -38,7 +38,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/icrowley/fake"
 	"github.com/magiconair/properties/assert"
-	"github.com/nicksherron/bashhub-server/internal"
+	"github.com/eddict/bashhub-server/internal"
 )
 
 var (

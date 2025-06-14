@@ -43,11 +43,11 @@ xgo \
     -out="bashhub-server-${version}" \
     --targets="linux/arm64,linux/arm-7,linux/amd64,linux/386,darwin/amd64,windows/*" \
     --dest=dist \
-    -ldflags "-X github.com/nicksherron/bashhub-server/cmd.Version=${version}
-     -X github.com/nicksherron/bashhub-server/cmd.GitCommit=${commit}
-     -X github.com/nicksherron/bashhub-server/cmd.BuildDate=${build_date}" \
+    -ldflags "-X github.com/eddict/bashhub-server/cmd.Version=${version}
+     -X github.com/eddict/bashhub-server/cmd.GitCommit=${commit}
+     -X github.com/eddict/bashhub-server/cmd.BuildDate=${build_date}" \
     -v -x \
-    github.com/nicksherron/bashhub-server
+    github.com/eddict/bashhub-server
 
 
 sudo chown -R $USER: dist/

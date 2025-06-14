@@ -1,16 +1,16 @@
 # bashhub-server
-[![CI](https://github.com/nicksherron/bashhub-server/actions/workflows/tests.yml/badge.svg)](https://github.com/nicksherron/bashhub-server/actions/workflows/tests.yml) <img src="https://img.shields.io/docker/pulls/nicksherron/bashhub-server.svg">
-[![Go Report Card](https://goreportcard.com/badge/github.com/nicksherron/bashhub-server)](https://goreportcard.com/report/github.com/nicksherron/bashhub-server) 
+[![CI](https://github.com/eddict/bashhub-server/actions/workflows/tests.yml/badge.svg)](https://github.com/eddict/bashhub-server/actions/workflows/tests.yml) <img src="https://img.shields.io/docker/pulls/eddict/bashhub-server.svg">
+[![Go Report Card](https://goreportcard.com/badge/github.com/eddict/bashhub-server)](https://goreportcard.com/report/github.com/eddict/bashhub-server) 
 
 bashhub-server is a private cloud alternative for  [bashhub-client](https://github.com/rcaloras/bashhub-client) with some
 added features like regex search.
  
 ## Features 
 
-- Very simple drop in replacement for bashhub.com server and easy to [install](https://github.com/nicksherron/bashhub-server#installation) and get running with existing bashhub-client and bh command.
+- Very simple drop in replacement for bashhub.com server and easy to [install](https://github.com/eddict/bashhub-server#installation) and get running with existing bashhub-client and bh command.
 - All the benefits of bashhub without having to send your shell history to a third-party
-- [Regex](https://github.com/nicksherron/bashhub-server#using-regex) search
-- [Import](https://github.com/nicksherron/bashhub-server#transferring-history-from-bashhubcom) old history from bashhub.com
+- [Regex](https://github.com/eddict/bashhub-server#using-regex) search
+- [Import](https://github.com/eddict/bashhub-server#transferring-history-from-bashhubcom) old history from bashhub.com
 - Quickly connect any client with  access to your server bashhub-sever address/port.
 - Written in Go so it's fast and is actively maintained
 - Salt hashed password encryption and jwt authentication protected endpoints
@@ -29,15 +29,15 @@ $ brew install bashhub-server/latest/bashhub-server
 ```
 #### Docker 
 ```
-$ docker pull nicksherron/bashhub-server
+$ docker pull eddict/bashhub-server
 ```
 #### Go
 go modules are required 
 ```
-$ GO111MODULE=on go get -u github.com/nicksherron/bashhub-server
+$ GO111MODULE=on go get -u github.com/eddict/bashhub-server
 ```
 #### Releases 
-Binaries for various os and architectures can be found in [releases](https://github.com/nicksherron/bashhub-server/releases).
+Binaries for various os and architectures can be found in [releases](https://github.com/eddict/bashhub-server/releases).
 If your system is not listed just submit an issue requesting your os and architecture.
 
 ## Usage 
@@ -85,7 +85,7 @@ $ bashhub-server
 or on docker (backend database files are persisted in container volume `/data`)
 
 ```
-$ docker run -d -p 8080:8080 --name bashhub-server  nicksherron/bashhub-server 
+$ docker run -d -p 8080:8080 --name bashhub-server  eddict/bashhub-server 
 ```
 Then add ```export BH_URL=http://localhost:8080``` (or whatever you set your bashhub-server address to) to your .zshrc or .bashrc 
 ```
@@ -130,7 +130,7 @@ Without regex
 $ bh bash
 
 bashhub setup
-docker pull nicksherron/bashhub-server
+docker pull eddict/bashhub-server
 bin/bashhub-server version
 untar bashhub-server_v0.1.0_darwin_amd64.tar.gz
 cd bashhub-server_v0.1.0_darwin_amd64

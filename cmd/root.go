@@ -31,7 +31,7 @@ import (
 	"syscall"
 
 	"github.com/fatih/color"
-	"github.com/nicksherron/bashhub-server/internal"
+	"github.com/eddict/bashhub-server/internal"
 	"github.com/spf13/cobra"
 )
 

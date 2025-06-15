@@ -49,7 +49,8 @@ COPY --from=build /go/bin/bashhub-server /usr/bin/bashhub-server
 # libc6-compat & libstdc++ are required for extended SASS libraries
 # ca-certificates are required to fetch outside resources (like Twitter oEmbeds)
 RUN apk update && \
-    apk add --no-cache ca-certificates libc6-compat libstdc++
+    apk add --no-cache ca-certificates libc6-compat libstdc++ go && \
+    GO111MODULE=on go get -u github.com/eddict/bashhub-server
 
 VOLUME /data
 WORKDIR /data

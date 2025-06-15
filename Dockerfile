@@ -50,7 +50,7 @@ COPY --from=build /go/bin/bashhub-server /usr/bin/bashhub-server
 # ca-certificates are required to fetch outside resources (like Twitter oEmbeds)
 RUN apk update && \
     apk add --no-cache ca-certificates libc6-compat libstdc++ go && \
-    GO111MODULE=on go install github.com/eddict/bashhub-server
+    GO111MODULE=on go install github.com/eddict/bashhub-server@latest
 
 VOLUME /data
 WORKDIR /data
